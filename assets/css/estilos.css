@@ -20,6 +20,20 @@ body {
   background-position: center;
 }
 
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 2. Efecto al pasar el puntero */
+.card:hover {
+    /* Elevación: mueve la tarjeta ligeramente hacia arriba (-5px) */
+    transform: translateY(-5px); 
+    /* Sombra: añade una sombra más pronunciada para el efecto 3D */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
+    /* Opcional: Cursor de puntero para indicar interactividad */
+    cursor: pointer;
+}
+
 /* Contacto */
 
 #Contacto form label {
